@@ -1,0 +1,35 @@
+CREATE DATABASE one_stop_shop;
+
+CREATE TABLE signup (
+
+		   userid INT (20) AUTO_INCREMENT PRIMARY KEY,
+		   name VARCHAR (100)NOT NULL,
+                   username VARCHAR (100)NOT NULL,
+		   password VARCHAR (20)NOT NULL
+);
+
+CREATE TABLE admin_login(
+		   userid INT (20) AUTO_INCREMENT PRIMARY KEY,
+                   username VARCHAR (100)NOT NULL,
+		   password VARCHAR (20)NOT NULL
+		  
+);
+
+insert into admin_login(username,password) values( "Admin","Password");	
+insert into admin_login(username,password) values( "Dave","abc");
+insert into admin_login(username,password) values( "Timothy","Pass");			
+
+
+CREATE TABLE products(
+	prod_id INT (20) AUTO_INCREMENT PRIMARY KEY,
+    prod_name VARCHAR(100) NOT NULL,
+    prod_price VARCHAR (50) NOT NULL,
+   prod_quantity INT(10), prod_image VARCHAR(500) NOT NULL,prod_category VARCHAR (10) NOT NULL,prod_desc VARCHAR(10) NOT NULL);
+
+
+
+This last table has the entries put inserted directly and not manually.
+ Snapshot of the same is listed below
+
+
+		     
